@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SoftEra</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Цвет фона всего документа */
+        }
+
+        .logo {
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .logo img {
+            width: 150px; /* Уменьшаем ширину логотипа */
+            height: auto; /* Автоматически рассчитываем высоту для поддержки пропорций */
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Стили для меню */
+        .menu_bar {
+            overflow: hidden;
+            height: 50px;
+            background-color: #32a8a8;
+            border-radius: 12px;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .menu_bar a {
+            transition: all 0.3s ease;
+            display: inline-block;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #f2f2f2;
+            padding: 10px 20px;
+            font-size: 20px;
+            text-decoration: none;
+            border-radius: 15px;
+            margin: 0 10px;
+        }
+        .menu_bar a:hover{
+            background-color: #5ec1ce;
+            color: yellow;
+            border-radius: 25px;
+        }
+        .menu_bar a.active {
+            background-color: white;
+            color: #32a8a8;
+            border-radius: 25px;
+        }
+
+        /* Container Styles */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: rgb(71, 69, 69);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .footer p {
+            font-size: 18px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="menu_bar">
+        <nav>
+            <a href="home.html">Главная</a>
+            <a href="about.html" class="active">О нас</a>
+            <a href="contact.html">Контакты</a>
+            <a href="disclaimer.html">Отказ от ответственности</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="logo">
+                <img src="logo.png" alt="SoftEra Логотип">
+            </div>
+            <h1 style="text-align: center; color: #555;">SoftEra - ваш проводник в мире программного обеспечения</h1>
+        </section>
+
+        <section class="about-content">
+            <div class="container">
+                <h2 style="color: #32a8a8;">О SoftEra</h2>
+                <p>SoftEra.tk - это веб-ресурс, предназначенный для всех, кто хочет быть в курсе последних версий и новинок в мире программного обеспечения.</p>
+                <p><strong style="color: #32a8a8;">Наша миссия:</strong></p>
+                <ul>
+                    <li>Предоставлять нашим пользователям доступ к широкому выбору качественного программного обеспечения для всех целей.</li>
+                    <li>Помогать каждому учиться использовать программы эффективно и продуктивно.</li>
+                </ul>
+                <p>SoftEra.tk - ваш надежный источник информации о программном обеспечении, готовый удовлетворить все ваши потребности.</p>
+                <p><strong style="color: #32a8a8;">На нашем сайте вы можете:</strong></p>
+                <ul>
+                    <li>Скачать самые популярные программы для работы, учебы и развлечений.</li>
+                    <li>Получить полезные советы и инструкции по установке и использованию программ.</li>
+                    <li>Узнать о последних трендах в мире программного обеспечения и технологий.</li>
+                </ul>
+                <p>Мы верим, что каждый должен иметь доступ к лучшему программному обеспечению для своих нужд. Присоединяйтесь к нам сегодня и начните загружать программы легко и быстро!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Все права защищены. Сделано Ниджатом Мамедовым.</p>
+    </footer>
+</body>
+</html>

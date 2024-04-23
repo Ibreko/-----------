@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Цвет фона всего документа */
+}
+
+.logo img {
+    width: 80px; /* Уменьшение ширины логотипа */
+    height: auto;
+    padding-top: 20px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+.menu_bar {
+    overflow: hidden;
+    height: 50px;
+    background-color: #32a8a8;
+    border-radius: 12px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.menu_bar a {
+    transition: all 0.3s ease;
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f2f2f2;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 15px;
+    margin: 0 10px;
+}
+
+.menu_bar a:hover {
+    background-color: #5ec1ce;
+    color: yellow;
+    border-radius: 25px;
+}
+
+.menu_bar a.active {
+    background-color: white;
+    color: #32a8a8;
+    border-radius: 25px;
+}
+
+/* Container Styles */
+.container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: rgb(71, 69, 69);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.footer p {
+    font-size: 18px;
+    margin: 5px;
+}

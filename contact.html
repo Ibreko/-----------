@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <style>
+        /* Стили для меню */
+        .menu_bar {
+            overflow: hidden;
+            height: 50px;
+            background-color: #32a8a8;
+            border-radius: 12px;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .menu_bar a {
+            transition: all 0.3s ease;
+            display: inline-block;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #f2f2f2;
+            padding: 10px 20px;
+            font-size: 20px;
+            text-decoration: none;
+            border-radius: 15px;
+            margin: 0 10px;
+        }
+        .menu_bar a:hover{
+            background-color: #5ec1ce;
+            color: yellow;
+            border-radius: 25px;
+        }
+        .menu_bar a.active {
+            background-color: white;
+            color: #32a8a8;
+            border-radius: 25px;
+        }
+        /* Стили для контейнера с формой */
+        .container {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f2f2f2;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+            transition: border-color 0.3s ease;
+        }
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        /* Стили для подвала */
+        .footer {
+            background-color: rgb(71, 69, 69);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .footer p{
+            font-size: 18px;
+            margin: 5px;
+        }
+        /* Стили для логотипа */
+        .logo img {
+            width: 150px;
+            height: auto;
+            padding-top: 20px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <title>SoftEra</title>
+</head>
+<body>
+    <!-- Меню навигации -->
+    <div class="menu_bar">
+        <a href="home.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a class="active" href="contact.html">Контакты</a>
+        <a href="disclaimer.html">Отказ от ответственности</a>
+    </div>
+    
+    <!-- Логотип -->
+    <div class="logo">
+        <img src="logo.png" alt="SoftEra">
+    </div>
+
+    <!-- Форма для связи -->
+    <div class="container">
+        <h1>Не стесняйтесь связаться с нами!</h1>
+        <p>Пожалуйста, заполните форму ниже.</p>
+        <form action="/action_page.php">
+            <label for="fname">Имя</label>
+            <input type="text" id="fname" name="firstname" placeholder="Ваше имя..">
+            <label for="lname">Email</label>
+            <input type="text" id="Email" name="Email" placeholder="Ваш Email..">
+            <label for="lname">Страна</label>
+            <input type="text" id="Country" name="Country" placeholder="Ваша страна..">
+            <label for="subject">Тема</label>
+            <textarea id="subject" name="subject" placeholder="Описание.." style="height:200px"></textarea>
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
+
+    <!-- Подвал -->
+    <div class="footer">
+        <p>Сделано Мамедовым Ниджатом.</p>
+        <p>Авторские права © 2024 | Все права защищены</p>
+    </div>
+</body>
+</html>
